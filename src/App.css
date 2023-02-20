@@ -1,0 +1,73 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+  *{
+     font-family: 'Red Hat Display', sans-serif;
+     font-size: 20px;
+  }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  margin: 0 auto;
+  width: 256px;
+  text-align: center;
+  border: 7px solid rgb(233, 17, 17);
+  background-color: rgb(251, 255, 0);
+  border-radius: 7px;
+}
+
+.keypad{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: minmax(50px,auto);
+}
+input[type="text"]
+{
+ height: 60px;
+ width:247px ;
+ background-color:red;
+ color: aliceblue;
+ text-align: right;
+ font-size: 40px;
+ font-weight: 400;
+ letter-spacing: 1px;
+border: solid 4.5px rgb(6, 6, 7);
+}
+
+button{
+  margin: 4px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color:rgb(0, 255, 51);
+  font-size: larger;
+  background-color: black;
+  font-weight: 500;
+}
+
+#clear{
+  color: aqua;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+#backspace{
+  color: rgb(13, 122, 218);
+  font-size: 29px;
+}
+
+#result{
+  grid-column: 3/5;
+  grid-row: 5;
+  color: rgb(51, 5, 94);
+  background-color: aliceblue;
+  font-weight: 800;
+  font-size: xx-large;
+}
